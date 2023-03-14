@@ -9,6 +9,10 @@ const daysDate = document.querySelector('[data-days]');
 const hoursDate = document.querySelector('[data-hours]');
 const minutesDate = document.querySelector('[data-minutes]');
 const secondsDate = document.querySelector('[data-seconds]');
+const timerItem = document.querySelector('.timer');
+
+
+
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
@@ -79,8 +83,9 @@ const fp = flatpickr(myInput, {
   },
 });
 
-// let calendar = flatpickr(myInput, options);
+timerItem.style.display = 'flex';
+timerItem.style.justifyContent = 'space-evenly';
+timerItem.style.width = '40%';
+timerItem.style.marginLeft = '18px';
 
-// myInput.addEventListener("click", () => {
 
-// });
