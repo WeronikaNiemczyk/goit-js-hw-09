@@ -2,12 +2,11 @@ const body = document.querySelector('body');
 const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
 
-intervalID = null;
+let intervalID;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-console.log(getRandomHexColor());
 
 function onStartBtnChangeColor() {
   intervalID = setInterval(() => {
